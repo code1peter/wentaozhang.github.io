@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://code1peter.github.io/wentaozhang.github.io/sitemap.xml
