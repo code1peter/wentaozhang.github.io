@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — Wentao Zhang</title>
+<meta name="description" content="Detailed research and engineering projects by Wentao Zhang: relativistic DFT parallelization, machine-learned force fields, and the Muchas-DB materials database.">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚛️</text></svg>">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">Wentao Zhang</a>
+    <a href="index.html#about" class="nav-link">About</a>
+    <a href="index.html#publications" class="nav-link">Publications</a>
+    <a href="index.html#skills" class="nav-link">Skills</a>
+    <a href="projects.html" class="nav-link is-active">Projects</a>
+    <a href="conferences.html" class="nav-link">Conferences</a>
+    <a href="assets/Wentao_Zhang_CV.pdf" class="nav-link">CV</a>
+  </div>
+</nav>
+
+<main>
+
+  <header class="hero" style="padding-bottom:34px;">
+    <div class="wrap">
+      <p class="hero-kicker">Details</p>
+      <h1 style="font-size:clamp(2rem,5.4vw,2.8rem);">Projects</h1>
+      <p class="hero-lede" style="margin-bottom:0;">
+        The technical detail behind the papers — what I built, how it works, and what it
+        made possible.
+      </p>
+    </div>
+  </header>
+
+  <section id="dft">
+    <div class="wrap">
+      <h2 class="sec">Large-scale parallelization of relativistic DFT</h2>
+      <p class="sec-note">
+        My main thesis project, and the subject of my first-author paper.
+      </p>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Quasi-four-component relativistic DFT, made parallel</h3>
+          <span class="card-meta">MPI · Fortran · HPC</span>
+        </div>
+        <p>
+          Heavy elements need relativistic quantum mechanics — their inner electrons move
+          fast enough that ignoring relativity gives the wrong answer. The problem is that
+          relativistic methods are expensive, and the standard implementations don't
+          spread across a supercomputer well.
+        </p>
+        <p>
+          I designed and implemented MPI-based parallel and memory-distributed algorithms
+          for quasi-four-component relativistic DFT with numeric atom-centered orbitals.
+        </p>
+        <ul>
+          <li>Achieved strong scaling across <strong>1,000+ CPU cores</strong> and multiple nodes.</li>
+          <li>Distributing memory removed the per-node ceiling that previously blocked heavy-element systems entirely.</li>
+          <li>Enabled accurate simulation of heavy-element molecules and solids that were out of reach before.</li>
+          <li>Shipped into FHI-aims, so other research groups get it for free.</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">MPI</span>
+          <span class="tag">Fortran</span>
+          <span class="tag">Distributed memory</span>
+          <span class="tag">Performance profiling</span>
+          <span class="tag">FHI-aims</span>
+        </div>
+        <p style="margin-top:16px;">
+          <a href="https://arxiv.org/abs/2608.00773">Read the paper — arXiv:2608.00773 →</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="mlff">
+    <div class="wrap">
+      <h2 class="sec">Machine-learned force fields</h2>
+      <p class="sec-note">
+        Replacing expensive quantum calculations with models that are nearly as accurate
+        and far faster.
+      </p>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>MACE potentials for relativistic DFT</h3>
+          <span class="card-meta">MACE · PyTorch</span>
+        </div>
+        <p>
+          A quantum calculation of the forces between atoms is accurate but slow — too
+          slow to simulate anything for very long. A machine-learned interatomic potential
+          learns that same energy surface from data, then evaluates it orders of magnitude
+          faster.
+        </p>
+        <p>
+          I trained and validated MACE-based potentials that reproduce relativistic
+          potential-energy surfaces at a fraction of the underlying cost.
+        </p>
+        <ul>
+          <li>Built the data pipeline turning large computational datasets into training sets.</li>
+          <li>Designed validation protocols to catch silent accuracy regressions — the failure mode that matters most when a model replaces ground truth.</li>
+          <li>Tuned architecture and training against a hard accuracy-versus-cost tradeoff.</li>
+          <li>Unlocked molecular-dynamics sampling at timescales direct DFT cannot reach.</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">PyTorch</span>
+          <span class="tag">MACE</span>
+          <span class="tag">Model validation</span>
+          <span class="tag">MD sampling</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="muchasdb">
+    <div class="wrap">
+      <h2 class="sec">Muchas-DB — open materials database</h2>
+      <p class="sec-note">
+        Web engineering in service of open science.
+      </p>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Django database for chalcogenide materials</h3>
+          <span class="card-meta">Django · Python</span>
+        </div>
+        <p>
+          Maintained and extended an open-access, Django-based database of chalcogenide
+          materials serving the broader research community — schema design, data ingestion,
+          and the web layer researchers actually query.
+        </p>
+        <div class="tags">
+          <span class="tag">Django</span>
+          <span class="tag">Data modeling</span>
+          <span class="tag">Open science</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="role">
+    <div class="wrap">
+      <h2 class="sec">Research role</h2>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>Research Assistant — Duke University</h3>
+          <span class="card-meta">Jan 2023 – Present</span>
+        </div>
+        <p>Ab Initio Materials Simulations Group · Advisor: Prof. Volker Blum</p>
+        <ul>
+          <li>Developed and validated ML models to streamline computational workflows, cutting analysis time and improving data-driven decisions in scientific applications.</li>
+          <li>Analyzed and visualized large-scale datasets to extract scientific insight and optimize computational processes.</li>
+          <li>Contributed to open-source materials databases supporting the broader research community.</li>
+          <li>Collaborated cross-functionally to present findings and deliver technical workshops on AI-enhanced simulation tools.</li>
+        </ul>
+      </div>
+
+      <div class="btn-row" style="margin-top:28px;">
+        <a href="index.html" class="btn btn-primary">← Back to home</a>
+        <a href="assets/Wentao_Zhang_CV.pdf" class="btn">Download CV</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>© <span id="year">2026</span> Wentao Zhang</div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="conferences.html">Conferences</a>
+      <a href="assets/Wentao_Zhang_CV.pdf">CV</a>
+      <a href="https://scholar.google.com/citations?user=hNyun7AAAAAJ&amp;hl=en">Scholar</a>
+      <a href="mailto:wentao.zhang@duke.edu">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

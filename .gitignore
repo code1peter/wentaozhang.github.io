@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Claude Code local settings
+.claude/
+
+# Original camera files — the web-ready crop lives in assets/profile.jpg
+*.HEIC
+*.heic
+IMG_*.png
+
+# Editor backups
+*~
+
+# CV — the current PDF still has a phone number in it.
+# Replace assets/Wentao_Zhang_CV.pdf with a phone-free export, then delete
+# these two lines so it gets published.
+assets/Wentao_Zhang_CV.pdf
+resume_wentao.pdf

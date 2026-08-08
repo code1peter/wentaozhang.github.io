@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wentao Zhang — High-Performance Computing Engineer</title>
+<meta name="description" content="Wentao Zhang — HPC engineer and computational physicist at Duke University. MPI parallel algorithms scaling to 1,000+ cores, distributed-memory design, performance optimization, and open-source scientific software. Open to industry HPC and scientific research roles.">
+
+<meta property="og:title" content="Wentao Zhang — High-Performance Computing Engineer">
+<meta property="og:description" content="MPI parallel algorithms at 1,000+ core scale, distributed-memory design, and performance optimization in open-source scientific software.">
+<meta property="og:type" content="website">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚛️</text></svg>">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">Wentao Zhang</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#publications" class="nav-link">Publications</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="conferences.html" class="nav-link">Conferences</a>
+    <a href="assets/Wentao_Zhang_CV.pdf" class="nav-link">CV</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ============ PROFILE + ABOUT ============ -->
+  <header class="hero" id="about" style="padding-bottom:56px;">
+    <div class="wrap">
+      <div class="profile">
+
+        <!-- ---------- left: photo + identity ---------- -->
+        <aside class="profile-side">
+          <!-- Drop your photo in as assets/profile.jpg — a square image works
+               best, ~600×600 or larger. It swaps in automatically; until then
+               the monogram below is shown. -->
+          <div class="avatar-wrap" id="avatar">
+            <div class="avatar-fallback">WZ</div>
+          </div>
+
+          <h1 class="profile-name">Wentao Zhang</h1>
+          <p class="profile-role">
+            High-Performance Computing Scientist<br>
+            Computational Physicist · Ph.D. Candidate
+          </p>
+          <p class="profile-org"><a href="https://duke.edu">Duke University</a></p>
+
+          <div class="social">
+            <a href="mailto:wentao.zhang@duke.edu" title="Email" aria-label="Email">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+            <a href="https://scholar.google.com/citations?user=hNyun7AAAAAJ&amp;hl=en" title="Google Scholar" aria-label="Google Scholar">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+            </a>
+            <!-- TODO: replace with your real GitHub URL -->
+            <a href="https://github.com/code1peter" title="GitHub" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.4-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+            </a>
+            <!-- LinkedIn: paste your real profile URL into the href below, then
+                 delete the two comment markers around this block to switch it on.
+                 It looks like https://www.linkedin.com/in/your-slug
+            <a href="PASTE-YOUR-LINKEDIN-URL" title="LinkedIn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm7 0h3.8v1.64h.05a4.17 4.17 0 0 1 3.75-2.06c4.01 0 4.75 2.64 4.75 6.07V21h-4v-5.5c0-1.31-.02-3-1.83-3-1.83 0-2.11 1.43-2.11 2.9V21h-4V9z"/></svg>
+            </a>
+            -->
+            <a href="assets/Wentao_Zhang_CV.pdf" title="Download CV" aria-label="Download CV">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 7V3.5L18.5 9H13zM12 12l4 4h-2.5v4h-3v-4H8l4-4z"/></svg>
+            </a>
+          </div>
+
+          <div class="side-block">
+            <h3>Interests</h3>
+            <ul class="interest-list">
+              <li>High-performance &amp; parallel computing</li>
+              <li>Performance optimization &amp; profiling</li>
+              <li>Scientific software engineering</li>
+              <li>Machine learning for science</li>
+              <li>Electronic structure theory</li>
+            </ul>
+          </div>
+
+          <div class="side-block">
+            <h3>Education</h3>
+
+            <div class="edu-item">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+              <div>
+                <p class="edu-item-degree">
+                  Ph.D. in Mechanical Engineering &amp; Materials Science, 2024–2028 (expected)
+                </p>
+                <p class="edu-item-school">Duke University</p>
+              </div>
+            </div>
+
+            <div class="edu-item">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+              <div>
+                <p class="edu-item-degree">
+                  M.Sc. in Mechanical Engineering &amp; Materials Science, 2023–2024
+                </p>
+                <p class="edu-item-school">Duke University</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- ---------- right: about me ---------- -->
+        <div class="profile-main">
+          <h2 class="sec">About me</h2>
+
+	  <p class="about-lead">
+	    I am Wentao Zhang, a <strong>high-performance computing scientist</strong> with a
+	    computational physics and chemistry background. I design and implement the parallel
+	    algorithms that let scientific simulation run at scale. My core work is parallelizing relativistic density functional theory; <strong>MPI</strong>, distributed-memory algorithms with strong scaling across
+	    <strong>1,000+ CPU cores</strong> and <strong>multiple nodes</strong>.
+	    Distributing the memory removed the per-node ceiling that had made heavy-element systems uncomputable, so
+	    calculations that were previously impossible now run as a matter of course.
+	  </p>
+
+	  <p class="about-lead">
+	    Day to day that means MPI and distributed-memory design, CPU/GPU
+	    hybrid execution, profiling and eliminating bottlenecks, and
+	    <strong>numerical linear algebra at scale</strong>, written as production
+	    <strong>Fortran, C/C++, and CUDA</strong> on HPC clusters. <strong>Python</strong>
+	    is the layer I orchestrate it from: build and job workflows, regression testing,
+	    performance analysis, and training
+	    <strong>machine-learned interatomic potentials</strong>. I am
+	    <strong>actively seeking industry HPC roles</strong> — parallel computing,
+	    performance engineering, and scientific computing infrastructure — and I am equally
+	    open to <strong>research positions</strong>, research institutes,
+	    and industrial R&amp;D groups. If you are working on problems where scaling and
+	    numerical performance actually matter,
+	    <a href="mailto:wentao.zhang@duke.edu">I would like to talk</a>.
+	  </p> 
+
+          <!-- ---------- skills, right column under About ---------- -->
+          <div class="skills-block" id="skills">
+            <h2 class="sec">Skills</h2>
+
+            <div class="skills-grid">
+              <div>
+                <h3>High-performance computing</h3>
+                <div class="tags">
+                  <span class="tag">MPI</span>
+                  <span class="tag">Distributed memory</span>
+                  <span class="tag">Parallel algorithm design</span>
+                  <span class="tag">Strong scaling</span>
+                  <span class="tag">Performance profiling</span>
+                  <span class="tag">Cluster computing</span>
+                </div>
+              </div>
+
+              <div>
+                <h3>Programming languages</h3>
+                <div class="tags">
+                  <span class="tag-plain tag">Fortran</span>
+                  <span class="tag-plain tag">C / C++</span>
+                  <span class="tag-plain tag">Python</span>
+                  <span class="tag-plain tag">MATLAB</span>
+                </div>
+              </div>
+
+              <div>
+                <h3>Machine learning &amp; data</h3>
+                <div class="tags">
+                  <span class="tag-plain tag">PyTorch</span>
+                  <span class="tag-plain tag">MACE</span>
+                  <span class="tag-plain tag">scikit-learn</span>
+                  <span class="tag-plain tag">NumPy</span>
+                </div>
+              </div>
+
+              <div>
+                <h3>Scientific domain</h3>
+                <div class="tags">
+                  <span class="tag-plain tag">Density functional theory</span>
+                  <span class="tag-plain tag">Relativistic quantum chemistry</span>
+                  <span class="tag-plain tag">Molecular dynamics</span>
+                  <span class="tag-plain tag">Materials science</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ AT A GLANCE ============ -->
+  <section id="glance" style="padding:44px 0;">
+    <div class="wrap">
+      <div class="metrics" style="margin-top:0;">
+        <div class="metric">
+          <div class="metric-num">1,000+</div>
+          <div class="metric-label">CPU cores at strong scaling</div>
+        </div>
+        <div class="metric">
+          <div class="metric-num">MPI</div>
+          <div class="metric-label">Distributed-memory algorithms in production</div>
+        </div>
+        <div class="metric">
+          <div class="metric-num">3</div>
+          <div class="metric-label">Papers &amp; preprints · 31 citations</div>
+        </div>
+        <div class="metric">
+          <div class="metric-num">Open</div>
+          <div class="metric-label">Contributor to FHI-aims</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PUBLICATIONS ============ -->
+  <section id="publications">
+    <div class="wrap">
+      <h2 class="sec">Published work</h2>
+      <p class="sec-note">
+        Three papers spanning relativistic quantum chemistry, open scientific software,
+        and materials discovery. Full list and citation counts on
+        <a href="https://scholar.google.com/citations?user=hNyun7AAAAAJ&amp;hl=en">Google Scholar</a>.
+      </p>
+
+      <div class="pub">
+        <div class="pub-idx">01</div>
+        <div>
+          <p class="pub-title">
+            A Large-Scale Parallel Implementation of Quasi-Four-Component Relativistic
+            Density Functional Theory with Numeric Atom-Centered Orbitals
+          </p>
+          <p class="pub-authors">
+            <span class="me">Wentao Zhang</span>, Rundong Zhao, Volker Blum
+          </p>
+          <p class="pub-venue">
+            arXiv:2608.00773, 2026 ·
+            <a href="https://arxiv.org/abs/2608.00773">arXiv</a>
+          </p>
+          <p class="pub-plain">
+            First-author. The method paper for my main thesis work — how to make
+            relativistic quantum calculations run efficiently on large parallel machines.
+          </p>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-idx">02</div>
+        <div>
+          <p class="pub-title">
+            Roadmap on Advancements of the FHI-aims Software Package
+          </p>
+          <p class="pub-authors">
+            Volker Blum, Sebastian Kokott, Mariana Rossi, Matthias Scheffler,
+            Joseph W. Abbott, <span class="me">Wentao Zhang</span>, et al.
+          </p>
+          <p class="pub-venue">
+            Electronic Structure, 2026 ·
+            <a href="https://arxiv.org/abs/2505.00125">arXiv</a>
+          </p>
+          <p class="pub-plain">
+            A large community paper documenting FHI-aims, an electronic-structure code
+            used by research groups worldwide. My most-cited work.
+          </p>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-idx">03</div>
+        <div>
+          <p class="pub-title">
+            Out-of-Plane Rashba Spin-Splitting and Structure–Property Relationships in
+            Layered Cu₂A M<sup>V</sup>Se₄ Chalcogenides (A = K, Rb, Cs; M<sup>V</sup> = V, Nb, Ta)
+          </p>
+          <p class="pub-authors">
+            Timothy M. McWhorter, <span class="me">Wentao Zhang</span>, Yuhao Shen,
+            Volker Blum, David B. Mitzi
+          </p>
+          <p class="pub-venue">Chemistry of Materials, 37(17):6603–6618, 2025</p>
+          <p class="pub-plain">
+            Simulation work connecting the atomic structure of a family of layered
+            materials to their electronic and spin properties.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact">
+    <div class="wrap">
+      <h2 class="sec">Get in touch</h2>
+      <p class="sec-note">
+        I am looking for <strong>industry HPC roles</strong> — parallel computing,
+        performance engineering, and scientific computing infrastructure — and I am also
+        open to <strong>scientific and research positions</strong>. Always happy to talk
+        about scaling, profiling, or getting more out of a cluster.
+      </p>
+      <div class="btn-row">
+        <a href="mailto:wentao.zhang@duke.edu" class="btn btn-primary">wentao.zhang@duke.edu</a>
+        <a href="assets/Wentao_Zhang_CV.pdf" class="btn">Download CV</a>
+        <a href="projects.html" class="btn">See my projects →</a>
+        <a href="conferences.html" class="btn">Conference map →</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>© <span id="year">2026</span> Wentao Zhang</div>
+    <div class="footer-links">
+      <a href="projects.html">Projects</a>
+      <a href="conferences.html">Conferences</a>
+      <a href="assets/Wentao_Zhang_CV.pdf">CV</a>
+      <a href="https://scholar.google.com/citations?user=hNyun7AAAAAJ&amp;hl=en">Scholar</a>
+      <a href="https://github.com/code1peter">GitHub</a>
+      <!-- <a href="PASTE-YOUR-LINKEDIN-URL">LinkedIn</a> -->
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Swap the monogram for your photo as soon as assets/profile.jpg exists.
+  (function () {
+    var img = new Image();
+    img.onload = function () {
+      var wrap = document.getElementById('avatar');
+      img.alt = 'Wentao Zhang';
+      wrap.innerHTML = '';
+      wrap.appendChild(img);
+    };
+    img.src = 'assets/profile.jpg';
+  })();
+</script>
+
+</body>
+</html>

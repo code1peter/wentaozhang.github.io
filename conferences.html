@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conferences — Wentao Zhang</title>
+<meta name="description" content="An interactive globe of the conferences Wentao Zhang has presented at, including an invited talk at the FHI-aims Developers' and Users' Meeting 2026 in Hamburg, Germany.">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚛️</text></svg>">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">Wentao Zhang</a>
+    <a href="index.html#about" class="nav-link">About</a>
+    <a href="index.html#publications" class="nav-link">Publications</a>
+    <a href="index.html#skills" class="nav-link">Skills</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="conferences.html" class="nav-link is-active">Conferences</a>
+    <a href="assets/Wentao_Zhang_CV.pdf" class="nav-link">CV</a>
+  </div>
+</nav>
+
+<main>
+  <section class="globe-page" style="border-top:none;">
+    <div class="wrap">
+      <p class="hero-kicker">Where I've been</p>
+      <h1 style="font-size:clamp(1.9rem,5vw,2.6rem);line-height:1.1;letter-spacing:-0.03em;margin:0 0 14px;">
+        Conference map
+      </h1>
+      <p class="hero-sub" style="margin-bottom:0;">
+        <span id="conf-count"></span>
+        Drag to spin the globe, scroll to zoom, and click any pin — or any row in the
+        list below — to fly to it. Arcs trace out from Duke; invited talks get a
+        taller pin.
+      </p>
+
+      <div class="globe-stage" id="globe-stage">
+        <div id="globe-viz"></div>
+        <div class="globe-loading" id="globe-loading">loading globe…</div>
+        <div class="globe-hint">drag to spin · scroll to zoom · click a pin</div>
+      </div>
+
+      <div class="note" id="placeholder-banner" style="display:none;">
+        <strong>Placeholder data.</strong> These entries are examples, not a record of
+        conferences actually attended. Edit <code>data/conferences.js</code> and set
+        <code>placeholder: false</code> on each verified entry — this banner disappears
+        on its own once none are left.
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:44px;">
+    <div class="wrap">
+      <h2 class="sec">All conferences</h2>
+      <div class="conf-list" id="conf-list"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>© <span id="year">2026</span> Wentao Zhang</div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="assets/Wentao_Zhang_CV.pdf">CV</a>
+      <a href="https://scholar.google.com/citations?user=hNyun7AAAAAJ&amp;hl=en">Scholar</a>
+      <a href="mailto:wentao.zhang@duke.edu">Email</a>
+    </div>
+  </div>
+</footer>
+
+<!-- globe.gl bundles three.js; only loaded on this page -->
+<script src="https://unpkg.com/globe.gl@2"></script>
+<!-- decodes the country-outline TopoJSON; globe degrades to a plain sphere without it -->
+<script src="https://unpkg.com/topojson-client@3"></script>
+<script src="data/conferences.js"></script>
+<script src="js/globe.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
