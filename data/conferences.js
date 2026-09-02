@@ -36,6 +36,20 @@ window.HOME_BASE = {
 
 window.CONFERENCES = [
   {
+    name: "2026 Quantum Multiscale Hackathon",
+    city: "New Brunswick",
+    region: "NJ",
+    country: "USA",
+    lat: 40.4862,
+    lng: -74.4518,
+    date: "August 27 – September 1, 2026",
+    year: 2026,
+    role: "Invited participant",
+    title: "",
+    venue: "Rutgers University Inn and Conference Center — an ACS Fall 2026 satellite event, by invitation only",
+    placeholder: false
+  },
+  {
     name: "FHI-aims Developers' and Users' Meeting 2026",
     city: "Hamburg",
     region: "Germany",
