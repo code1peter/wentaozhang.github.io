@@ -630,6 +630,14 @@ footer {
 .conf-role { font-size: 14px; color: var(--text-mid); margin: 0; }
 .conf-city { font-family: var(--mono); font-size: 12.5px; color: var(--text-dim); white-space: nowrap; }
 
+/* Static list on the home page: no click-to-fly, so no button affordance. */
+.conf-list.is-static .conf-row { cursor: default; }
+.conf-list.is-static .conf-row:hover {
+  background: none;
+  border-color: transparent;
+  border-bottom-color: var(--border);
+}
+
 @media (max-width: 620px) {
   .conf-row { grid-template-columns: 1fr; gap: 5px; }
   .conf-city { text-align: left; }
