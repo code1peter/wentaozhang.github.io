@@ -610,7 +610,7 @@ footer {
 
 .conf-row {
   display: grid;
-  grid-template-columns: 96px 1fr auto;
+  grid-template-columns: 168px 1fr auto;
   gap: 18px;
   align-items: baseline;
   padding: 17px 14px;

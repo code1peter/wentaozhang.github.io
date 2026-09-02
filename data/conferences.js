@@ -42,7 +42,7 @@ window.CONFERENCES = [
     country: "USA",
     lat: 40.4862,
     lng: -74.4518,
-    date: "August 27 – September 1, 2026",
+    date: "Aug 27 – Sep 1, 2026",
     year: 2026,
     role: "Invited participant",
     title: "",
