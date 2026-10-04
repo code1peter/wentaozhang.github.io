@@ -42,7 +42,7 @@ window.CONFERENCES = [
     country: "USA",
     lat: 35.9095,
     lng: -79.0470,
-    date: "Sep 19, 2026",
+    date: "Sep 18–19, 2026",
     year: 2026,
     role: "Lightning talk",
     title: "A Large-scale Parallel Implementation of Quasi-Four-Component Relativistic Density Functional Theory with Numeric Atom-centered Orbitals",
