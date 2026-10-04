@@ -36,6 +36,20 @@ window.HOME_BASE = {
 
 window.CONFERENCES = [
   {
+    name: "Pariser–Parr Lecture and Theory Day 2026",
+    city: "Chapel Hill",
+    region: "NC",
+    country: "USA",
+    lat: 35.9095,
+    lng: -79.0470,
+    date: "Sep 19, 2026",
+    year: 2026,
+    role: "Lightning talk",
+    title: "A Large-scale Parallel Implementation of Quasi-Four-Component Relativistic Density Functional Theory with Numeric Atom-centered Orbitals",
+    venue: "The Carolina Club, UNC Chapel Hill — Theory Lightning Talk Competition",
+    placeholder: false
+  },
+  {
     name: "2026 Quantum Multiscale Hackathon",
     city: "New Brunswick",
     region: "NJ",
